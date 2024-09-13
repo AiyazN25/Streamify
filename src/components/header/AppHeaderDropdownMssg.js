@@ -1,5 +1,5 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
+import { cilEnvelopeOpen } from '@coreui/icons'
+import CIcon from '@coreui/icons-react'
 import {
   CAvatar,
   CBadge,
@@ -10,8 +10,7 @@ import {
   CDropdownMenu,
   CDropdownToggle,
 } from '@coreui/react-pro'
-import CIcon from '@coreui/icons-react'
-import { cilEnvelopeOpen } from '@coreui/icons'
+import React from 'react'
 
 import avatar1 from './../../assets/images/avatars/1.jpg'
 import avatar2 from './../../assets/images/avatars/2.jpg'
@@ -20,7 +19,6 @@ import avatar4 from './../../assets/images/avatars/4.jpg'
 import avatar5 from './../../assets/images/avatars/5.jpg'
 
 const AppHeaderDropdownMssg = () => {
-  const { t } = useTranslation()
   const itemsCount = 4
   return (
     <CDropdown variant="nav-item" alignment="end">
@@ -36,7 +34,7 @@ const AppHeaderDropdownMssg = () => {
       </CDropdownToggle>
       <CDropdownMenu className="pt-0" style={{ minWidth: '24rem' }}>
         <CDropdownHeader className="bg-body-secondary text-body-secondary fw-semibold rounded-top mb-2">
-          {t('messagesCounter', { counter: itemsCount })}
+          Messages
         </CDropdownHeader>
         <CDropdownItem href="#">
           <div className="d-flex">
@@ -124,7 +122,7 @@ const AppHeaderDropdownMssg = () => {
         </CDropdownItem>
         <CDropdownDivider />
         <CDropdownItem className="text-center fw-semibold" href="#">
-          {t('viewAllMessages')}
+          View All Messages
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>

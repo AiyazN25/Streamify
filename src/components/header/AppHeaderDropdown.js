@@ -1,5 +1,16 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
+import {
+  cilAccountLogout,
+  cilBell,
+  cilCommentSquare,
+  cilCreditCard,
+  cilEnvelopeOpen,
+  cilFile,
+  cilLockLocked,
+  cilSettings,
+  cilTask,
+  cilUser,
+} from '@coreui/icons'
+import CIcon from '@coreui/icons-react'
 import {
   CAvatar,
   CBadge,
@@ -10,24 +21,11 @@ import {
   CDropdownMenu,
   CDropdownToggle,
 } from '@coreui/react-pro'
-import {
-  cilBell,
-  cilCreditCard,
-  cilCommentSquare,
-  cilEnvelopeOpen,
-  cilFile,
-  cilLockLocked,
-  cilSettings,
-  cilTask,
-  cilUser,
-  cilAccountLogout,
-} from '@coreui/icons'
-import CIcon from '@coreui/icons-react'
+import React from 'react'
 
 import avatar8 from './../../assets/images/avatars/8.jpg'
 
 const AppHeaderDropdown = () => {
-  const { t } = useTranslation()
   return (
     <CDropdown variant="nav-item" alignment="end">
       <CDropdownToggle className="py-0" caret={false}>
@@ -35,57 +33,57 @@ const AppHeaderDropdown = () => {
       </CDropdownToggle>
       <CDropdownMenu className="pt-0">
         <CDropdownHeader className="bg-body-secondary text-body-secondary fw-semibold rounded-top mb-2">
-          {t('account')}
+          account
         </CDropdownHeader>
         <CDropdownItem href="#">
           <CIcon icon={cilBell} className="me-2" />
-          {t('updates')}
+          updates
           <CBadge color="info-gradient" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilEnvelopeOpen} className="me-2" />
-          {t('messages')}
+          messages
           <CBadge color="success-gradient" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilTask} className="me-2" />
-          {t('tasks')}
+          tasks
           <CBadge color="danger-gradient" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilCommentSquare} className="me-2" />
-          {t('comments')}
+          comments
           <CBadge color="warning-gradient" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
         <CDropdownHeader className="bg-body-secondary text-body-secondary fw-semibold my-2">
-          {t('settings')}
+          settings
         </CDropdownHeader>
         <CDropdownItem href="#">
           <CIcon icon={cilUser} className="me-2" />
-          {t('profile')}
+          profile
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilSettings} className="me-2" />
-          {t('settings')}
+          settings
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilCreditCard} className="me-2" />
-          {t('payments')}
+          payments
           <CBadge color="secondary-gradient" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilFile} className="me-2" />
-          {t('projects')}
+          projects
           <CBadge color="primary-gradient" className="ms-2">
             42
           </CBadge>
@@ -93,11 +91,11 @@ const AppHeaderDropdown = () => {
         <CDropdownDivider />
         <CDropdownItem href="#">
           <CIcon icon={cilLockLocked} className="me-2" />
-          {t('lockAccount')}
+          lockAccount
         </CDropdownItem>
         <CDropdownItem href="#">
           <CIcon icon={cilAccountLogout} className="me-2" />
-          {t('logout')}
+          logout
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>

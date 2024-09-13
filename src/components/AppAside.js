@@ -1,22 +1,3 @@
-import React, { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { useTranslation } from 'react-i18next'
-import {
-  CAvatar,
-  CCloseButton,
-  CFormSwitch,
-  CNav,
-  CNavItem,
-  CNavLink,
-  CTabContent,
-  CTabPane,
-  CListGroup,
-  CListGroupItem,
-  CProgress,
-  CSidebar,
-  CSidebarHeader,
-} from '@coreui/react-pro'
-import CIcon from '@coreui/icons-react'
 import {
   cibSkype,
   cilCalendar,
@@ -26,6 +7,24 @@ import {
   cilSettings,
   cilSpeech,
 } from '@coreui/icons'
+import CIcon from '@coreui/icons-react'
+import {
+  CAvatar,
+  CCloseButton,
+  CFormSwitch,
+  CListGroup,
+  CListGroupItem,
+  CNav,
+  CNavItem,
+  CNavLink,
+  CProgress,
+  CSidebar,
+  CSidebarHeader,
+  CTabContent,
+  CTabPane,
+} from '@coreui/react-pro'
+import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import avatar1 from './../assets/images/avatars/1.jpg'
 import avatar2 from './../assets/images/avatars/2.jpg'
@@ -39,7 +38,6 @@ import avatar8 from './../assets/images/avatars/8.jpg'
 const AppAside = () => {
   const dispatch = useDispatch()
   const asideShow = useSelector((state) => state.asideShow)
-  const { t } = useTranslation()
 
   const [activeKey, setActiveKey] = useState(1)
 
@@ -52,7 +50,7 @@ const AppAside = () => {
       placement="end"
       visible={asideShow}
       onVisibleChange={(visible) => {
-        dispatch({ type: 'set', asideShow: visible })
+        dispatch({ type: 'setAside', payload: visible })
       }}
     >
       <CSidebarHeader className="p-0 position-relative">
@@ -96,14 +94,14 @@ const AppAside = () => {
         </CNav>
         <CCloseButton
           className="position-absolute top-50 end-0 translate-middle my-0"
-          onClick={() => dispatch({ type: 'set', asideShow: false })}
+          onClick={() => dispatch({ type: 'setAside', payload: false })}
         />
       </CSidebarHeader>
       <CTabContent>
         <CTabPane visible={activeKey === 1}>
           <CListGroup flush>
             <CListGroupItem className="list-group-item border-start-4 border-start-secondary bg-body-secondary text-center fw-semibold text-body-secondary text-uppercase small">
-              {t('today')}
+              today
             </CListGroupItem>
             <CListGroupItem href="#" className="border-start-4 border-start-warning">
               <CAvatar src={avatar7} size="lg" className="float-end" />
@@ -130,7 +128,7 @@ const AppAside = () => {
               </small>
             </CListGroupItem>
             <CListGroupItem className="border-start-4 border-start-secondary bg-body-secondary text-center fw-semibold text-body-secondary text-uppercase small">
-              {t('tomorrow')}
+              tomorrow
             </CListGroupItem>
             <CListGroupItem href="#" className="border-start-4 border-start-danger">
               <div>
@@ -264,7 +262,7 @@ const AppAside = () => {
           </div>
         </CTabPane>
         <CTabPane className="p-3" visible={activeKey === 3}>
-          <h6>{t('settings')}</h6>
+          <h6>settings</h6>
           <div>
             <div className="clearfix mt-4">
               <CFormSwitch size="lg" label="Option 1" id="Option1" defaultChecked />
@@ -298,22 +296,17 @@ const AppAside = () => {
             </div>
           </div>
           <hr />
-          <h6>{t('systemUtilization')}</h6>
-          <div className="text-uppercase small fw-semibold  mb-1 mt-4">{t('cpuUsage')}</div>
+          <h6>systemUtilization</h6>
+          <div className="text-uppercase small fw-semibold  mb-1 mt-4">cpuUsage</div>
           <CProgress thin color="info-gradient" value={25} />
-          <div className="text-body-secondary small">
-            {t('cpuUsageDescription', {
-              number_of_processes: 348,
-              number_of_cores: '1/4',
-            })}
-          </div>
-          <div className="text-uppercase small fw-semibold mb-1 mt-2">{t('memoryUsage')}</div>
+          <div className="text-body-secondary small">cpuUsageDescription</div>
+          <div className="text-uppercase small fw-semibold mb-1 mt-2">memoryUsage</div>
           <CProgress thin color="warning-gradient" value={70} />
           <div className="text-body-secondary small">11444GB/16384MB</div>
-          <div className="text-uppercase small fw-semibold mb-1 mt-2">{t('ssdUsage')}</div>
+          <div className="text-uppercase small fw-semibold mb-1 mt-2">ssdUsage</div>
           <CProgress thin color="danger-gradient" value={95} />
           <div className="text-body-secondary small">243GB/256GB</div>
-          <div className="text-uppercase small fw-semibold mb-1 mt-2">{t('ssdUsage')}</div>
+          <div className="text-uppercase small fw-semibold mb-1 mt-2">ssdUsage</div>
           <CProgress thin color="success-gradient" value={10} />
           <div className="text-body-secondary small">25GB/256GB</div>
         </CTabPane>

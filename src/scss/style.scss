@@ -1,16 +1,12 @@
 // If you want to override variables do it here
-@import "variables";
+@import 'variables';
 
 // Import styles
-@import "@coreui/coreui-pro/scss/coreui";
-@import "@coreui/chartjs/scss/coreui-chartjs";
-
-// Vendors
-@import "vendors/calendar";
-@import "vendors/simplebar";
+@import '@coreui/coreui-pro/scss/coreui';
+@import '@coreui/chartjs/scss/coreui-chartjs';
 
 // Custom styles for this theme
-@import "theme";
+@import 'theme';
 
 // If you want to add custom CSS you can put it here
-@import "custom";
+@import 'custom';

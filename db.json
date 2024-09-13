@@ -1,0 +1,164 @@
+{
+    "songs": {
+        "recentStreams": [
+            {
+                "id": 1,
+                "name": "Blinding Lights",
+                "artist": "The Weeknd",
+                "lastStreamed": "2024//08/15",
+                "streamCount": 305,
+                "userId": "tune53"
+            },
+            {
+                "id": 2,
+                "name": "Shape of You",
+                "artist": "Ed Sheeran",
+                "lastStreamed": "2024//08/25",
+                "streamCount": 525,
+                "userId": "musicLover92"
+            },
+            {
+                "id": 3,
+                "name": "Levitating",
+                "artist": "Dua Lipa",
+                "lastStreamed": "2024//09/01",
+                "streamCount": 100,
+                "userId": "songbird88"
+            },
+            {
+                "id": 4,
+                "name": "Drivers License",
+                "artist": "Olivia Rodrigo",
+                "lastStreamed": "2024//09/04",
+                "streamCount": 1,
+                "userId": "driveFan12"
+            },
+            {
+                "id": 5,
+                "name": "Uptown Funk",
+                "artist": "Mark Ronson ft. Bruno Mars",
+                "lastStreamed": "2024//09/05",
+                "streamCount": 200,
+                "userId": "funkMaster01"
+            },
+            {
+                "id": 6,
+                "name": "Bad Guy",
+                "artist": "Billie Eilish",
+                "lastStreamed": "2024//09/05",
+                "streamCount": 187,
+                "userId": "billieFan99"
+            },
+            {
+                "id": 7,
+                "name": "Old Town Road",
+                "artist": "Lil Nas X",
+                "lastStreamed": "2024//09/07",
+                "streamCount": 450,
+                "userId": "cowboy123"
+            },
+            {
+                "id": 8,
+                "name": "Happier Than Ever",
+                "artist": "Billie Eilish",
+                "lastStreamed": "2024//09/08",
+                "streamCount": 52,
+                "userId": "moodRing45"
+            },
+            {
+                "id": 9,
+                "name": "Senorita",
+                "artist": "Shawn Mendes & Camila Cabello",
+                "lastStreamed": "2024//09/10",
+                "streamCount": 177,
+                "userId": "latinLover87"
+            },
+            {
+                "id": 10,
+                "name": "Stay",
+                "artist": "The Kid LAROI & Justin Bieber",
+                "lastStreamed": "2024/09/10",
+                "streamCount": 64,
+                "userId": "bieberFan25"
+            }
+        ],
+        "topStreams": [
+            {
+                "name": "Shape of You",
+                "streamCount": 525
+            },
+            {
+                "name": "Old Town Road",
+                "streamCount": 450
+            },
+            {
+                "name": "Blinding Lights",
+                "streamCount": 305
+            },
+            {
+                "name": "Uptown Funk",
+                "streamCount": 200
+            },
+            {
+                "name": "Bad Guy",
+                "streamCount": 187
+            }
+        ],
+        "totalStreams": 10453,
+        "topRecentArtist": "Ed Sheeran"
+    },
+    "revenue": {
+        "ads": 500,
+        "subs": 2000
+    },
+    "userGrowth": [
+        {
+            "total": 100,
+            "active": 80
+        },
+        {
+            "total": 150,
+            "active": 90
+        },
+        {
+            "total": 200,
+            "active": 60
+        },
+        {
+            "total": 210,
+            "active": 150
+        },
+        {
+            "total": 300,
+            "active": 200
+        },
+        {
+            "total": 350,
+            "active": 240
+        },
+        {
+            "total": 350,
+            "active": 270
+        },
+        {
+            "total": 360,
+            "active": 300
+        },
+        {
+            "total": 400,
+            "active": 250
+        },
+        {
+            "total": 400,
+            "active": 250
+        },
+        {
+            "total": 460,
+            "active": 300
+        },
+        {
+            "total": 500,
+            "active": 300
+        }
+    ]
+}

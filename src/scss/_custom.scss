@@ -1,1 +1,13 @@
 // Here you can add other styles
+
+@media screen and (max-width: 520px) {
+  table {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .x-small-th {
+    font-size: x-small;
+  }
+}
