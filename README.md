@@ -1,3 +1,5 @@
+Github Repo Link: https://github.com/AiyazN25/Streamify
+
 Start the json server: json-server --watch db.json
 
 Start the React dev server to launch the app: npm start
