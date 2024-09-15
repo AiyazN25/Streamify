@@ -7,7 +7,7 @@
     "zipPrefix": ".zip/coreui-pro-react-admin-template-theme",
     "bundler": "vite"
   },
-  "homepage": ".",
+  "homepage": "https://AiyazN25.github.io/Streamify",
   "bugs": {
     "url": "https://github.com/coreui/coreui-pro-react-admin-template/issues"
   },
@@ -18,6 +18,8 @@
   "license": "SEE LICENSE IN LICENSE",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint \"src/**/*.js\"",
     "serve": "vite preview",
@@ -63,6 +65,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "prettier": "3.3.2",
     "sass": "^1.77.5",
