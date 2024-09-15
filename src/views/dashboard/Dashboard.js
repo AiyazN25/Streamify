@@ -16,7 +16,10 @@ import {
 import { CChartBar, CChartLine, CChartPie } from '@coreui/react-chartjs'
 import { useDispatch, useSelector } from 'react-redux'
 
-const url = 'http://localhost:3000/db'
+const url =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3000/db'
+    : 'https://my-json-server.typicode.com/AiyazN25/Streamify/db'
 const selectTotalUsers = (state) => state.userGrowth[state.userGrowth.length - 1]?.total
 const selectActiveUsers = (state) => state.userGrowth[state.userGrowth.length - 1]?.active
 const selectTotalUserGrowth = createSelector(
