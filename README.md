@@ -1,4 +1,5 @@
 Github Repo Link: https://github.com/AiyazN25/Streamify
+Live link: https://AiyazN25.github.io/Streamify
 
 Start the json server: json-server --watch db.json
 
